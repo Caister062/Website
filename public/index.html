@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fortnite Live Event and Real-Time Posts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="countdown-container">
+        <h2>Fortnite Live Event Countdown</h2>
+        <div id="countdown">00d 00h 00m 00s</div>
+        <div id="real-time">Current Time: --:--:--</div>
+    </div>
+
+    <div id="post-container">
+        <input id="username-input" type="text" placeholder="Enter your username">
+        <input id="handle-input" type="text" placeholder="Enter your handle">
+        <input id="profile-picture-input" type="file" accept="image/*">
+        <button id="set-profile">Set Profile</button>
+
+        <input id="post-input" type="text" placeholder="What's happening?" disabled>
+        <input id="image-input" type="file" accept="image/*" disabled>
+        <button id="send-post" disabled>Send Post</button>
+
+        <ul id="posts"></ul>
+    </div>
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #282c34;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    margin: 0;
+}
+
+#countdown-container, #post-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    background: #3a3f51;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+#countdown {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#real-time {
+    font-size: 1.2rem;
+    color: #61dafb;
+}
+
+#post-input, #send-post, #username-input, #handle-input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#send-post, #set-profile {
+    background: #61dafb;
+    color: #282c34;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+#send-post:hover, #set-profile:hover {
+    background: #4a9dbd;
+}
+
+#posts {
+    list-style-type: none;
+    padding: 0;
+    margin: 10px 0;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#posts li {
+    padding: 10px;
+    margin: 5px 0;
+    background: #333a44;
+    border-radius: 10px;
+    word-break: break-word;
+    line-height: 1.4;
+    font-size: 0.95rem;
+}
+
+.post-header {
+    font-weight: bold;
+}
+
+.post-timestamp {
+    font-size: 0.85rem;
+    color: #aaa;
+}
